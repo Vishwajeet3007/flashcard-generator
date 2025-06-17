@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("AIzaSyBdeyKJqlXOKmNA8-kP-ES_A5s4_BxGGAA"))  # from .env
+genai.configure(api_key=os.getenv("AIzaSyBdeyKJqlXOKmNA8-kP-ES_A5s4_BxGGAA"))  
 
 def generate_flashcards(text, subject="General", language="English"):
     prompt = f"""
