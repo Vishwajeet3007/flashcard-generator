@@ -5,7 +5,7 @@ from utils import read_file, export_flashcards, export_anki
 st.set_page_config(page_title="LLM Flashcard Generator", layout="centered")
 st.title("🧠 LLM-Powered Flashcard Generator")
 
-uploaded_file = st.file_uploader("Upload PDF or TXT file", type=["pdf", "txt"])
+uploaded_file = st.file_uploader("Upload PDF or TXT file", type=["pdf", "txt",])
 raw_text = st.text_area("Or paste content directly here", height=250)
 subject = st.selectbox("Select Subject (optional)", ["General", "Biology", "CS", "History"])
 language = st.selectbox("Generate flashcards in", ["English", "Hindi", "Spanish", "French"])
